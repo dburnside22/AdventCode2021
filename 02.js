@@ -1,8 +1,6 @@
 const getFile = require("./getFile.js");
 data = getFile.func("02");
 
-console.log(data[0]);
-
 let horizontal = 0;
 let depth = 0;
 let aim = 0;
