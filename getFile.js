@@ -1,5 +1,9 @@
-module.exports.func = function (number) {
+module.exports.func = function (number, test) {
   const fs = require("fs");
-  const data = fs.readFileSync(`./${number}_data.txt`, "utf8");
+  let fileName = `./${number}_data.txt`;
+  if (test) {
+    fileName = `./${number}_test_data.txt`;
+  }
+  const data = fs.readFileSync(fileName, "utf8");
   return data.split(/\r?\n/);
 };

@@ -1,5 +1,5 @@
 const getFile = require("./getFile.js");
-data = getFile.func("03");
+data = getFile.func("03", false);
 
 let oxygen = data;
 let co2 = data;
