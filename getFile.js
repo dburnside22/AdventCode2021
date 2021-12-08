@@ -5,5 +5,5 @@ module.exports.func = function (number, test) {
     fileName = `./${number}_test_data.txt`;
   }
   const data = fs.readFileSync(fileName, "utf8");
-  return data.split(/\r?\n/);
+  return data;
 };
